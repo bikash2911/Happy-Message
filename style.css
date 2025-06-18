@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: #f0f8ff;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#formSection,
+#messageSection {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input {
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #45a049;
+}
+.reaction-btn {
+  margin: 15px 10px 0;
+  padding: 14px 22px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #e0e0e0;
+  border: 2px solid #888;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reaction-btn:hover {
+  background-color: #d5d5d5;
+}
+#messageSection {
+  display: none;
+  margin-top: 30px;
+}
+h2 span {
+  color: #4caf50;
+}
+#happyMsg {
+  font-size: 20px;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  button,
+  .reaction-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  #happyMsg {
+    font-size: 18px;
+  }
+}
