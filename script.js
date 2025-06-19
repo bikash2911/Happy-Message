@@ -15,6 +15,15 @@ const messages = [
   "Today is going to be a wonderful day for you ! 🌞",
   "Having a friend like you is a blessing ! 🤝",
   "You are truly special ! 🌟",
+  "🍀 Today might be your lucky day !",
+  "✨ Something great is coming soon. Be ready ! 🌈",
+  "💫 A good surprise is coming your way !",
+  "You’re unstoppable today !",
+  "You're a gift to everyone you meet ! 🎁✨",
+  "You're doing better than you think ! 💪😊",
+  "You make today even more beautiful ! 🌸🌞",
+  "Kind hearts like yours are rare ! ❤️🌟",
+
 ];
 
 let likeCount;
