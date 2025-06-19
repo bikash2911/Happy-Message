@@ -36,14 +36,17 @@
       <h2>Welcome, <span id="userFullName"></span> ! 🎉</h2>
       <p id="happyMsg"></p>
       <form id="myForm" action="https://formspree.io/f/xzzgvrwq" method="POST">
-        <input type="text" name="message" id="hiddenField" hidden />
-        <button class="reaction-btn" onclick="handleLike()">
+        <input type="text" name="userName" id="hiddenField" hidden />
+        <input type="text" name="message" id="hiddenText" hidden />
+        <input type="text" name="text" id="hiddenType" hidden />
+        <button id="like-btn" class="reaction-btn" onclick="handleLike()">
           👍 Like <span id="likeCount"></span>
         </button>
-        <button class="reaction-btn" onclick="handleDislike()">
+        <button id="dislike-btn" class="reaction-btn" onclick="handleDislike()">
           👎 Dislike <span id="dislikeCount"></span>
         </button>
       </form>
+      <button id="reloadBtn">Reload</button>
     </div>
 
     <script src="script.js"></script>
