@@ -12,9 +12,9 @@ button.addEventListener("click", () => {
 });
 
 const messages = [
-  "आजको दिन तपाईंका लागि अद्भुत हुनेछ! 🌞",
-  "तपाईं जस्तो साथी हुनु नै भाग्य हो! 🤝",
-  "तपाईं एकदमै विशेष हुनुहुन्छ! 🌟",
+  "Today is going to be a wonderful day for you ! 🌞",
+  "Having a friend like you is a blessing ! 🤝",
+  "You are truly special ! 🌟",
 ];
 
 let likeCount;
@@ -26,7 +26,7 @@ function showHappyMessage() {
   const fullName = `${fName} ${lName}`.trim();
 
   if (!fName || !lName) {
-    alert("कृपया First Name र Last Name दुबै भर्नुहोस्।");
+    alert("Please enter both your First Name and Last Name.");
     return;
   }
 
@@ -42,11 +42,11 @@ function showHappyMessage() {
 function handleLike() {
   likeCount++;
   document.getElementById("likeCount").textContent = likeCount;
-  alert("Thank you for liking! 😍");
+  alert("Thank you for liking ! 😍");
 }
 
 function handleDislike() {
   dislikeCount++;
   document.getElementById("dislikeCount").textContent = dislikeCount;
-  alert("We will try to do better! 😢");
+  alert("We will try to do better ! 😢");
 }
